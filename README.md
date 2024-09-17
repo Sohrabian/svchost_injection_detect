@@ -20,12 +20,12 @@ reg add "HKLM\system\currentcontrolset\services\Test1\parameters" /v servicedll 
 ```
 
 If you have CTI Role Base for Hunting this abnormal Behavior on the SVCHOST.exe you must using Powershell script as Base line using these methods:
-1- Run "svchost_injection_detect.ps1" on the Clean Install System and take an output for further compare.
-2- Run "svchost_injection_detect.ps1" on victim
-3- diff between Clean and malincous outputs
+1. Run "svchost_injection_detect.ps1" on the Clean Install System and take an output for further compare.
+2. Run "svchost_injection_detect.ps1" on victim
+3. diff between Clean and malincous outputs
 
 In Brifly :
-1- Create a service
-2- add our services into the ServiceGroup like DcomLunch
-3- add our payload into the DcomLunch Service Group name dll1.dll
-4- if the victime login to his client our paylaod would be run
+1. Create a service
+2. add our services into the ServiceGroup like DcomLunch
+3. add our payload into the DcomLunch Service Group name dll1.dll
+4. if the victime login to his client our paylaod would be run
